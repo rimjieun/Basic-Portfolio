@@ -69,13 +69,9 @@ h3 {
 
 }
 
-.maincontent {
-	width: 650px;
-	background: white;
-	padding: 30px 25px 30px 25px;
-	margin-right: 40px;
-	display: inline;
-	border: 1px solid #dddddd;
+section {
+	content:"";
+	display: table;
 }
 
 aside {
@@ -84,49 +80,6 @@ aside {
 	background: #ffffff;
 	padding: 30px 25px 30px 25px;
 	border: 1px solid #dddddd;
-}
-
-#portrait {
-	width: 30%;
-	height: auto;
-	float: left;
-	margin-right: 25px;
-	margin-bottom: 10px;
-	border: 1px solid #dddddd;
-}
-
-.absolute {
-	position: absolute;
-	width: 280px;
-	height: 60px;
-	background: #4aaaa5;
-	color: #ffffff;
-	text-align: center;
-	padding-top: 11px;
-	font-size: 20px;
-	margin-top: 100px;
-	font-family: Georgia;
-}
-
-.placeholder {
-	width: 280px;
-	height: auto;
-	margin-bottom: 30px;
-}
-
-.socialicon {
-	width: 60px;
-	height: 60px;
-	margin: 3px;
-}
-
-.columns {
-	column-count: 2;
-}
-
-section {
-	content:"";
-	display: table;
 }
 
 footer {
@@ -142,14 +95,6 @@ footer {
 	color: #cccccc;
 	font-family: Arial;
 	font-size: 16px;
-}
-
-.wrap {
-	width: 960px;
-}
-
-.centered {
-	margin: 0 auto;
 }
 
 p {
@@ -175,6 +120,76 @@ textarea {
 	width: 100%;
 }
 
+hr {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: #dddddd;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.wrap {
+	width: 960px;
+}
+
+.centered {
+	margin: 0 auto;
+}
+
+.columns {
+	column-count: 2;
+}
+
+.absolute {
+	position: absolute;
+	width: 280px;
+	height: 60px;
+	background: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 11px;
+	font-size: 20px;
+	margin-top: 100px;
+	font-family: Georgia;
+}
+
+.maincontent {
+	width: 650px;
+	background: white;
+	padding: 30px 25px 30px 25px;
+	margin-right: 40px;
+	display: inline;
+	border: 1px solid #dddddd;
+}
+
+.placeholder {
+	width: 280px;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+.socialicon {
+	width: 60px;
+	height: 60px;
+	margin: 3px;
+}
+
+#portrait {
+	width: 30%;
+	height: auto;
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	border: 1px solid #dddddd;
+}
+
+
 #submitbutton {
 	height: 40px;
 	width: 110px;
@@ -185,16 +200,4 @@ textarea {
 	border: none;
 }
 
-.right {
-	float: right;
-}
 
-.left {
-	float: left;
-}
-
-hr {
-	margin-top: 25px;
-	margin-bottom: 25px;
-	color: #dddddd;
-}
