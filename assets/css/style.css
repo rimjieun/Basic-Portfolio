@@ -189,8 +189,10 @@ hr {
 @media (max-width: 960px) {
 	.wrapper {
 		width: 760px;
-		margin: 0 auto;}
+		margin: 0 auto;
+	}
 	aside {
-	margin-top: 40px;
-	float: left;}
+		margin-top: 40px;
+		float: left;
+	}
 }
