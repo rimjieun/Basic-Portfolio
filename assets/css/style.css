@@ -16,16 +16,16 @@ header {
 	width: 100%;
 	height: 80px;
 	top: 0;
+	right: 0;
+	left: 0;
 	border-bottom: 3px solid #cccccc;
 	margin-bottom: 40px;
-	overflow: hidden;
 }
 
 nav {
 	color: #cccccc;
 	background: #ffffff;
 	width: 270px;
-	height: 80px;
 	padding-top: 28px;
 	display: inline;
 	float: right;
