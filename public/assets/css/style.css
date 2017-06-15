@@ -1,0 +1,63 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Muli', sans-serif;
+  font-size: 17px;
+  font-weight: lighter;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*PROPERTIES*/
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.full-page {
+  width: 100%;
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.sec-title {
+  font-size: 1.5vw;
+  padding-top: 4%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
