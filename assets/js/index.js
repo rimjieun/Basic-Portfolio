@@ -23,4 +23,4 @@ $(document).ready(function() {
         scrollTop: $(".section5").offset().top},
         'slow');
   });
-});
+})
