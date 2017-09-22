@@ -1,34 +1,29 @@
-// Require our dependecies
-var express = require("express");
-var mongoose = require("mongoose");
-var bluebird = require("bluebird");
-var bodyParser = require("body-parser");
-var routes = require("./routes/routes");
+const express = require('express');
+const mongoose = require('mongoose');
+const bluebird = require('bluebird');
+const bodyParser = require('body-parser');
+const routes = require('./routes/routes'); 
 
-// Set up a default port, configure mongoose, configure our middleware
-var PORT = process.env.PORT || 3000;
-mongoose.Promise = bluebird;
-var app = express();
+const app = express();
+const PORT = process.env.PORT || 3000;
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + '/public'));
 app.use("/", routes);
 
-var db = process.env.MONGODB_URI || "mongodb://localhost/portfolio";
+const db = process.env.MONGODB_URI || 'mongodb://localhost/projects';
 
-// Connect mongoose to our database
-mongoose.connect(db, function(error) {
-  // Log any errors connecting with mongoose
-  if (error) {
-    console.error(error);
-  }
-  // Or log a success message
-  else {
-    console.log("Mongoose connection is successful.");
-  }
+mongoose.Promise = bluebird;
+
+var promise = mongoose.connect(db, {
+  useMongoClient: true
+}).then( () => {
+  console.log('Mongoose connection is successful.');
+}, err => {
+  console.log(err);
 });
 
-// Start the server
 app.listen(PORT, function() {
-  console.log("Now listening on port %s! Visit localhost:%s in your browser.", PORT, PORT);
+  console.log('Connected to server. Go to http://localhost:%s.', PORT);
 });

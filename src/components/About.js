@@ -1,13 +1,24 @@
 import React, { Component } from 'react';
+import { Route, Link } from 'react-router-dom';
+import Intro from './components/Intro';
+import Skills from './components/Skills'
 
-class About extends Component {
-  render() {
-    return (
-      <div>
-        <h2>This is the About page.</h2>
-      </div>
-    );
-  }
-}
+const About = props => (
+  <div className='container'>
+    <div className='image-container'>
+      <img src='./assets/img/profile-pic.jpg' id='profile-pic' />
+    </div>
+    <nav className='about-nav'>
+      <ul>
+        <Link to='/intro'>Intro</Link>
+        <Link to='/skills'>Skills</Link>
+      </ul>
+    </nav>
+    <div>
+      <Route path='/intro' component={Intro} />
+      <Route path='/skills' component={Skills} />
+    </div>
+  </div>
+);
 
 export default About;

@@ -1,7 +1,7 @@
-var express = require("express");
-var path = require("path");
+const express = require('express');
+const path = require('path');
+const router = new express.Router();
 
-var router = new express.Router();
 
 // Otherwise send all other requests the index.html page
 // React router will handle routing withing the app
