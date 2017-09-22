@@ -19,6 +19,9 @@
   "bugs": {
     "url": "https://github.com/rimjieun/Portfolio/issues"
   },
+  "engines": {
+    "node": "8.4.0"
+  },
   "homepage": "https://github.com/rimjieun/Portfolio#readme",
   "dependencies": {
     "axios": "^0.16.2",
