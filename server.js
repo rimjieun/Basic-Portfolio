@@ -26,4 +26,4 @@ var promise = mongoose.connect(db, {
 
 app.listen(PORT, function() {
   console.log('Connected to server. Go to http://localhost:%s.', PORT);
-});
+})
