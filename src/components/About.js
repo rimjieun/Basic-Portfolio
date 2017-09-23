@@ -15,8 +15,7 @@ const About = props => (
       </ul>
     </nav>
     <div>
-      <Route path='/intro' component={Intro} />
-      <Route path='/skills' component={Skills} />
+      <Intro />
     </div>
   </div>
 );
