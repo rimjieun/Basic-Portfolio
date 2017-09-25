@@ -20,11 +20,30 @@ body {
   justify-content: space-between;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*MAIN NAV BAR*/
 nav.main-nav {
   background: #33cccc;
   height: 60px;
 }
 
+/*Logo*/
+div#title {
+  font-size: 37px;
+  color: #f5f5f5;
+}
+
+div#subtitle {
+  font-size: 15px;
+  color: #1f7a7a;
+}
+
+/*Nav Buttons*/
 nav.main-nav ul {
   width: 250px;
   height: 60px;
@@ -42,16 +61,7 @@ nav.main-nav ul .nav-btn:hover {
   background-color: #5dd5d5;
 }
 
-div#title {
-  font-size: 37px;
-  color: #f5f5f5;
-}
-
-div#subtitle {
-  font-size: 15px;
-  color: #1f7a7a;
-}
-
+/*ABOUT PAGE*/
 div.image-container {
   padding: 40px 0;
 }
@@ -64,3 +74,95 @@ img#profile-pic {
   margin: auto;
   border: 5px solid #aeeaea;
 }
+
+/*CONTACT PAGE*/
+div.contact {
+  justify-content: center;
+}
+
+i.fa {
+  font-size: 33px;
+  width: 50px;
+}
+
+/*Form*/
+form.contact {
+  width: 450px;
+  min-height: 400px;
+  padding: 0 70px;
+  margin: 100px 0;
+  border-right: 1px solid lightgrey;
+  color: grey;
+}
+
+div.contact.message {
+  text-align: center;
+}
+
+p.contact {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f7a7a;
+  align-self: center;
+}
+
+input.form-item,
+textarea.form-item {
+  border: none;
+  outline: none;
+  border-bottom: 1px grey solid;
+  background: transparent;
+}
+
+input.form-item {
+  width: 380px;
+}
+
+textarea.form-item {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+}
+
+input#submit {
+  width: 100px;
+  height: 30px;
+  align-self: center;
+  border: none;
+  outline: none;
+  background: #33cccc;
+  color: #f5f5f5;
+  border-radius: 30px;
+}
+
+input#submit:hover {
+  background: #1f7a7a;
+  cursor: pointer;
+}
+
+/*Social Icons*/
+div.social-icons {
+  margin: 200px 50px;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a.social-icon {
+  width: 200px;
+  justify-content: start;
+  align-items: center;
+  margin: 10px 0;
+  color: grey;
+}
+
+a.social-icon:hover {
+  color: #1f7a7a;
+  cursor: pointer;
+}
+
+p.social-icon {
+  font-size: 12px;
+  font-weight: 500;
+}
+

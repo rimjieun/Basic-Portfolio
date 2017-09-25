@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Intro from './components/Intro';
 import Skills from './components/Skills'
 
@@ -15,7 +15,8 @@ const About = props => (
       </ul>
     </nav>
     <div>
-      <Intro />
+        <Route path='/intro' component={Intro} />
+        <Route path ='/skills' component={Skills} />
     </div>
   </div>
 );
