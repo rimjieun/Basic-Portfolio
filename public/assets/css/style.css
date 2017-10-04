@@ -10,6 +10,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.bold {
+  font-weight: bold;
+  color: #666666;
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
@@ -24,6 +29,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.content-center {
+  align-items: center;
+  justify-content: center;
 }
 
 /*MAIN NAV BAR*/
@@ -63,7 +73,7 @@ nav.main-nav ul .nav-btn:hover {
 
 /*ABOUT PAGE*/
 div.image-container {
-  padding: 40px 0;
+  padding: 40px 0 30px;
 }
 
 img#profile-pic {
@@ -72,7 +82,52 @@ img#profile-pic {
   border-radius: 50%;
   display: block;
   margin: auto;
-  border: 5px solid #aeeaea;
+  border: 3px solid #aeeaea;
+}
+
+ul.about-nav {
+  margin-bottom: 30px;
+}
+
+li.about-nav {
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 15px;
+  /*font-weight: bold;*/
+  color: grey;
+}
+
+li.about-nav:first-child {
+  border-right: 1px solid grey;
+}
+
+li.about-nav:hover {
+  color: #33cccc;
+}
+
+li.about-nav:active {
+  color: red;
+}
+
+li.about-nav:target {
+  color: green;
+}
+
+div.intro {
+  /*background: #f5f5f5;*/
+  color: grey;
+  padding: 20px 80px;
+  border-top: solid #aeeaea 2px;
+  /*border-bottom: double #aeeaea 5px;*/
+}
+
+p.intro {
+  line-height: 20px;
+  font-size: 15px;
+}
+
+i.fa.intro {
+  font-size: 18px;
 }
 
 /*CONTACT PAGE*/
