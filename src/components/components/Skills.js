@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 const Skills = () => (
   <div className='skills-section flex-col content-center'>
     <span className='skills-title'>
-      M E R N
+      m e r n
     </span>
     <div className='skills-icons flex-row'>
       <div className='tooltip'>
@@ -24,7 +24,7 @@ const Skills = () => (
       </div>
     </div>
     <span className='skills-title'>
-      O T H E R
+      o t h e r
     </span>
     <div className='skills-icons flex-row'>
       <div className='tooltip'>
