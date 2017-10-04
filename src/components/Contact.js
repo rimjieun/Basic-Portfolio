@@ -4,9 +4,7 @@ const Contact = () => (
   <div className='container flex-row contact'>
     <form className='flex-col contact' action='/submit' method='POST'>
       <div className='contact message'>
-        <p className='contact'>W A N T&nbsp;&nbsp;&nbsp;&nbsp;T O&nbsp;&nbsp;&nbsp;&nbsp;W O R K&nbsp;&nbsp;&nbsp;&nbsp;T O G E T H E R ?</p><br />
-        <p className='contact'>L O O K I N G &nbsp;&nbsp;&nbsp;&nbsp;F O R&nbsp;&nbsp;&nbsp;&nbsp;D E V E L O P E R S ?</p><br />
-        <p className='contact'>S E N D&nbsp;&nbsp;&nbsp;&nbsp;M E&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;M E S S A G E !</p>
+        <p>Want to work on a project together? Send me a message!</p>
       </div>
       <div className='flex-row form-item'>
         <label htmlFor='name'><i className="fa fa-user-circle-o" aria-hidden="true"></i></label>
