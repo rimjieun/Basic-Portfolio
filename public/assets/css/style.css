@@ -240,6 +240,7 @@ input.form-item {
 textarea.form-item {
   font-family: 'Roboto', sans-serif;
   padding: 0;
+  width: 380px;
 }
 
 input#submit {
