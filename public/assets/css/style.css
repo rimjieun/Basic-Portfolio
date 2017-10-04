@@ -2,6 +2,7 @@
 seafoam green: #a0d6b4
 orange: #ff751a*/
 
+/*GENERAL*/
 .test {
   background: pink;
 }
@@ -87,13 +88,15 @@ img#profile-pic {
 
 ul.about-nav {
   margin-bottom: 30px;
+  width: 700px;
+  padding-bottom: 20px;
+  border-bottom: solid #aeeaea 2px;
 }
 
 li.about-nav {
   padding: 0 10px;
   cursor: pointer;
   font-size: 15px;
-  /*font-weight: bold;*/
   color: grey;
 }
 
@@ -105,19 +108,10 @@ li.about-nav:hover {
   color: #33cccc;
 }
 
-li.about-nav:active {
-  color: red;
-}
-
-li.about-nav:target {
-  color: green;
-}
-
+/*Intro*/
 div.intro {
-  /*background: #f5f5f5;*/
   color: grey;
-  padding: 20px 80px;
-  border-top: solid #aeeaea 2px;
+  padding: 0 80px;
   /*border-bottom: double #aeeaea 5px;*/
 }
 
@@ -128,6 +122,56 @@ p.intro {
 
 i.fa.intro {
   font-size: 18px;
+}
+
+/*Skills*/
+div.skills-icons {
+  margin: 15px 0;
+}
+
+span.skills-title {
+  color: #d9d9d9;
+}
+
+i.skills-icon {
+  font-size: 50px;
+  color: lightgrey;
+  margin: 0 20px;
+}
+
+i.skills-icon:hover {
+  color: #1f7a7a;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 60%;
+    margin-left: -60px;
+    font-size: 12px;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+    line-height: 15px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
 /*CONTACT PAGE*/

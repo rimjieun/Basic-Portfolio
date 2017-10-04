@@ -22,7 +22,7 @@ class About extends Component {
 
   render() {
     return (
-      <div className='container'>
+      <div className='container flex-col content-center'>
         <div className='image-container'>
           <img src='./assets/img/profile-pic.jpg' id='profile-pic' />
         </div>
