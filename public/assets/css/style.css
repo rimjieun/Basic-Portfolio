@@ -90,7 +90,7 @@ img#profile-pic {
 
 ul.about-nav {
   margin-bottom: 30px;
-  width: 700px;
+  width: 200px;
   padding-bottom: 20px;
   border-bottom: solid #aeeaea 2px;
 }
@@ -187,11 +187,32 @@ div.projects {
 }
 
 div.project-item {
-  width: 300px;
-  height: 180px;
+  width: 280px;
+  height: 150px;
   background: grey;
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+}
+
+div.project-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+h1.project-title {
+  font-size: 30px;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+  max-width: 200px;
+  vertical-align: middle;
 }
 
 /*CONTACT PAGE*/
