@@ -176,9 +176,29 @@ i.skills-icon:hover {
 }
 
 /*PROJECTS PAGE*/
+div.projects-container {
+  margin-top: 50px;
+}
+
+div.not-ongoing-container {
+  width: 720px;
+}
+
+div.ongoing-container {
+  padding-left: 10px;
+  border-left: 1px lightgrey solid;
+}
 
 h1.projects {
-  margin: 50px 0 20px;
+  height: 40px;
+  margin: 20px 0 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+h1.ongoing {
+  width: 330px;
+  line-height: 20px;
 }
 
 div.projects {
@@ -190,7 +210,7 @@ div.project-item {
   width: 280px;
   height: 150px;
   background: grey;
-  margin: 20px;
+  margin: 35px 35px 10px;
   border-radius: 5px;
   position: relative;
   text-align: center;
