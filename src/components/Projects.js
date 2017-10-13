@@ -10,43 +10,33 @@ class Projects extends Component {
           id: 1,
           title: 'MeetPoint',
           imgURL: './assets/img/meetpoint.jpg',
-          color: 'rgba(255, 165, 0, 0.6)',
-          ongoing: false
+          color: 'rgba(204, 153, 0, 0.6)',
+          ongoing: false,
+          description: 'MeetPoint uses the Yelp search engine to find meeting locations conveniently located from all parties of a group.'
         },
         {
           id: 2,
-          title: 'SignatureFD',
+          title: 'SignatureFD Paperwork',
           imgURL: './assets/img/signaturefd.jpeg',
-          color: 'rgba(0, 0, 0, 0.5)',
-          ongoing: false
+          color: 'rgba(0, 51, 153, 0.6)',
+          ongoing: false,
+          description: 'SignatureFD Paperwork was developed to streamline the onboarding process of new employees at SignatureFD, a financial planning company.'
         },
         {
           id: 3,
-          title: 'Smart3DATL',
-          imgURL: './assets/img/marta.jpg',
-          color: 'rgba(0, 102, 0, 0.6)',
-          ongoing: false
+          title: 'Braves Concessions',
+          imgURL: './assets/img/braves.jpeg',
+          color: 'rgba(128, 0, 0, 0.6)',
+          ongoing: false,
+          description: 'Hello'
         },
         {
           id: 4,
-          title: 'Braves Concessions',
-          imgURL: './assets/img/braves.jpeg',
-          color: 'rgba(153, 0, 0, 0.6)',
-          ongoing: false
-        },
-        {
-          id: 5,
-          title: 'BootCruit',
-          imgURL: './assets/img/bootcruit.jpg',
-          color: 'rgba(0, 34, 102, 0.6)',
-          ongoing: true
-        },
-        {
-          id: 6,
-          title: 'Roster Scraper',
+          title: 'Dekalb Jail Scraper',
           imgURL: './assets/img/bail.jpeg',
-          color: 'rgba(102, 0, 102, 0.6)',
-          ongoing: true
+          color: 'rgba(51, 102, 0, 0.6)',
+          ongoing: true,
+          description: 'Hello'
         }
       ]
     };
@@ -60,7 +50,7 @@ class Projects extends Component {
           <div className='not-ongoing projects flex-row'>
             {this.state.projects.map(project => {
               if (project.ongoing === false) {
-                return <ProjectItem key={project.id} imgURL={project.imgURL} color={project.color} title={project.title} />
+                return <ProjectItem key={project.id} imgURL={project.imgURL} color={project.color} title={project.title} description={project.description} />
               }
             })}
           </div>
@@ -70,7 +60,7 @@ class Projects extends Component {
           <div className='ongoing projects flex-col'>
             {this.state.projects.map(project => {
               if (project.ongoing === true) {
-                return <ProjectItem key={project.id} imgURL={project.imgURL} color={project.color} title={project.title} />
+                return <ProjectItem key={project.id} imgURL={project.imgURL} color={project.color} title={project.title} description={project.description} />
               }
             })}
           </div>

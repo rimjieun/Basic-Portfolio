@@ -15,7 +15,7 @@ const ProjectItem = props => (
         {props.title}
       </h1>
     </div>
-    <p className='project'>Hello</p>
+    <p className='project-description'>{props.description}</p>
   </div>
 );
 
