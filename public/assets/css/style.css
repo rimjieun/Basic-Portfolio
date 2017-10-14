@@ -2,6 +2,10 @@
 seafoam green: #a0d6b4
 orange: #ff751a*/
 
+* {
+  box-sizing: border-box;
+}
+
 /*GENERAL*/
 body {
   font-family: 'Quicksand', sans-serif;
@@ -190,7 +194,8 @@ i.skills-icon:hover {
 /*PROJECTS PAGE*/
 /*Project Containers*/
 div.projects {
-  margin-top: 10px;
+  margin-top: 30px;
+  padding: 0 50px;
 }
 
 h1.projects {
@@ -219,7 +224,7 @@ div.not-current {
 /*Project Items*/
 div.current .project-item,
 div.not-current .project-item {
-  min-width: 320px;
+  min-width: 300px;
   height: 170px;
   border-radius: 5px;
   position: relative;
@@ -263,7 +268,7 @@ p.project-description {
 }
 
 p.current-project-description {
-  padding: 0 0 0 85px;
+  padding: 0 0 0 65px;
   text-align: left;
   font-size: 18px;
   line-height: 25px;
