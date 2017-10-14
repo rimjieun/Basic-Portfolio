@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Intro from './components/Intro';
-import Skills from './components/Skills'
+import Intro from './Intro';
+import Skills from './Skills'
 
 class About extends Component {
 

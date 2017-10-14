@@ -10,19 +10,19 @@ class Contact extends Component {
         {
           id: 1,
           label: 'github.com/rimjieun',
-          classes: 'fa fa-github-alt social-icon',
+          classes: 'fa fa-github-alt',
           url: 'https://github.com/rimjieun'
         },
         {
           id: 2,
           label: 'linkedin.com/in/rimjieun',
-          classes: 'fa fa-linkedin-square social-icon',
+          classes: 'fa fa-linkedin-square',
           url: 'https://linkedin.com/in/rimjieun'
         },
         {
           id: 3,
           label: 'instagram.com/yakuccino',
-          classes: 'fa fa-instagram social-icon',
+          classes: 'fa fa-instagram',
           url: 'https://instagram.com/yakuccino'
         }
       ]

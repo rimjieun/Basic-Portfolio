@@ -190,7 +190,7 @@ i.skills-icon:hover {
 /*PROJECTS PAGE*/
 /*Project Containers*/
 div.projects {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 h1.projects {
@@ -274,34 +274,28 @@ div.contact {
   justify-content: center;
 }
 
-i.fa {
-  font-size: 33px;
-  width: 50px;
-}
-
 /*Form*/
 form.contact {
-  width: 450px;
+  width: 500px;
   min-height: 400px;
-  padding: 0 70px;
   margin: 100px 0;
-  border-right: 1px solid lightgrey;
   color: grey;
 }
 
-div.contact.message {
+h1.contact {
+  font-size: 20px;
+  line-height: 30px;
   text-align: center;
 }
 
-p.contact {
-  font-size: 13px;
-  font-weight: 600;
-  color: #1f7a7a;
-  align-self: center;
+div.form-item {
+  margin: 20px 0;
 }
 
 input.form-item,
 textarea.form-item {
+  width: 100%;
+  font-size: 15px;
   border: none;
   outline: none;
   border-bottom: 1px grey solid;
@@ -309,24 +303,22 @@ textarea.form-item {
   font-family: 'Quicksand', sans-serif;
 }
 
-input.form-item {
-  width: 380px;
-}
-
-textarea.form-item {
-  padding: 0;
-  width: 380px;
+div.submit {
+  float: right;
+  display: inline;
 }
 
 input#submit {
+  font-size: 15px;
   width: 100px;
-  height: 30px;
-  align-self: center;
+  height: 40px;
+  /*align-self: right;*/
+  float: right;
   border: none;
   outline: none;
   background: #33cccc;
   color: #f5f5f5;
-  border-radius: 30px;
+  border-radius: 5px;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -335,9 +327,17 @@ input#submit:hover {
   cursor: pointer;
 }
 
+i.contact,
+i.social-icon {
+  font-size: 40px;
+  width: 70px;
+}
+
 /*Social Icons*/
 div.social-icons {
-  margin: 200px 50px;
+  margin: 100px 50px;
+  padding: 110px 0 0 40px;
+  border-left: 1px solid lightgrey;
 }
 
 a, a:visited {
@@ -345,10 +345,10 @@ a, a:visited {
 }
 
 a.social-icon {
-  width: 200px;
+  width: 250px;
   justify-content: start;
   align-items: center;
-  margin: 10px 0;
+  margin: 20px 0;
   color: grey;
 }
 
@@ -358,7 +358,6 @@ a.social-icon:hover {
 }
 
 p.social-icon {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
 }
-
