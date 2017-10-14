@@ -3,12 +3,7 @@ seafoam green: #a0d6b4
 orange: #ff751a*/
 
 /*GENERAL*/
-.test {
-  background: pink;
-}
-
 body {
-  /*font-family: 'Roboto', sans-serif;*/
   font-family: 'Quicksand', sans-serif;
   background: whitesmoke;
 }
@@ -19,7 +14,7 @@ body {
 }
 
 .container {
-  width: 85%;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -42,24 +37,29 @@ body {
 /*MAIN NAV BAR*/
 nav.main-nav {
   background: #33cccc;
-  height: 60px;
+  height: 70px;
 }
 
 /*Logo*/
+div.logo {
+  width: 310px;
+  text-align: center;
+}
+
 div#title {
-  font-size: 37px;
+  font-size: 45px;
   color: #f5f5f5;
 }
 
 div#subtitle {
-  font-size: 15px;
+  font-size: 17.8px;
   color: #1f7a7a;
 }
 
 /*Nav Buttons*/
 nav.main-nav ul {
-  width: 250px;
-  height: 60px;
+  width: 300px;
+  height: 70px;
 }
 
 nav.main-nav ul .nav-btn {
@@ -67,7 +67,8 @@ nav.main-nav ul .nav-btn {
   text-align: center;
   color: #f5f5f5;
   text-decoration: none;
-  padding-top: 20px;
+  padding-top: 24px;
+  font-size: 20px;
 }
 
 nav.main-nav ul .nav-btn:hover {
@@ -76,50 +77,57 @@ nav.main-nav ul .nav-btn:hover {
 
 /*ABOUT PAGE*/
 div.image-container {
-  padding: 40px 0 30px;
+  padding: 50px 0 30px;
 }
 
 img#profile-pic {
-  width: 150px;
+  width: 180px;
   height: auto;
   border-radius: 50%;
   display: block;
-  margin: auto;
+  margin: 0 auto;
   border: 3px solid #aeeaea;
 }
 
 ul.about-nav {
-  margin-bottom: 30px;
-  width: 200px;
+  /*margin-bottom: 10px;*/
   padding-bottom: 20px;
-  border-bottom: solid #aeeaea 2px;
 }
 
 li.about-nav {
-  padding: 0 10px;
+  padding: 0 20px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 20px;
   color: grey;
 }
 
 li.about-nav:first-child {
-  border-right: 1px solid grey;
+  border-right: 1px solid lightgrey;
 }
 
 li.about-nav:hover {
   color: #33cccc;
 }
 
+li.selected {
+  color: #33cccc;
+}
+
 /*Intro*/
 div.intro {
   color: grey;
-  padding: 0 80px;
-  /*border-bottom: double #aeeaea 5px;*/
+  width: 900px;
+}
+
+.center {
+  text-align: center;
 }
 
 p.intro {
-  line-height: 20px;
-  font-size: 15px;
+  line-height: 35px;
+  font-size: 18px;
+  margin: 20px;
+  /*width: 500px;*/
 }
 
 i.fa.intro {
@@ -127,6 +135,10 @@ i.fa.intro {
 }
 
 /*Skills*/
+div.skills-section {
+  margin-top: 20px;
+}
+
 div.skills-icons {
   margin: 15px 0;
 }
@@ -176,45 +188,46 @@ i.skills-icon:hover {
 }
 
 /*PROJECTS PAGE*/
-div.projects-container {
-  margin-top: 50px;
-}
-
-div.not-ongoing-container {
-  width: 720px;
-}
-
-div.ongoing-container {
-  padding-left: 10px;
-  border-left: 1px lightgrey solid;
+/*Project Containers*/
+div.projects {
+  margin-top: 20px;
 }
 
 h1.projects {
-  height: 40px;
-  margin: 20px 0 0;
-  text-align: center;
-  font-size: 18px;
+  font-size: 23px;
+  margin: 20px 0 20px 35px;
+  text-align: left;
+  color: grey;
 }
 
-h1.ongoing {
-  width: 330px;
-  line-height: 20px;
+div.current {
+  margin: 10px 0;
+  padding: 0 35px;
 }
 
-div.projects {
-  justify-content: center;
-  flex-wrap: wrap;
+div.current-projects {
+  padding-bottom: 40px;
+  border-bottom: 1px solid lightgrey;
+}
+
+div.not-current {
   align-items: flex-start;
+  margin: 10px 0;
+  padding: 0 35px;
 }
 
-div.project-item {
-  width: 280px;
-  height: 150px;
-  background: grey;
-  margin: 35px 35px 10px;
+/*Project Items*/
+div.current .project-item,
+div.not-current .project-item {
+  min-width: 320px;
+  height: 170px;
   border-radius: 5px;
   position: relative;
   text-align: center;
+}
+
+div.project-item:hover {
+  box-shadow: 0px 10px 50px rgba(0,0,0,.60);
 }
 
 div.project-layer {
@@ -231,16 +244,29 @@ h1.project-title {
   position: absolute;
   z-index: 1;
   color: white;
-  font-weight: bold;
   max-width: 200px;
   vertical-align: middle;
+  line-height: 35px
 }
 
-p.project-description {
-  width: 280px;
+p.project-description,
+p.current-project-description {
   text-align: center;
   font-size: 15px;
   line-height: 20px;
+  color: grey;
+}
+
+p.project-description {
+  width: 300px;
+  margin-top: 10px;
+}
+
+p.current-project-description {
+  padding: 0 0 0 85px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 /*CONTACT PAGE*/

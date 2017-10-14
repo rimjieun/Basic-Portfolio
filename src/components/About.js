@@ -20,6 +20,8 @@ class About extends Component {
     }
   }
 
+
+
   render() {
     return (
       <div className='container flex-col content-center'>
@@ -27,10 +29,17 @@ class About extends Component {
           <img src='./assets/img/profile-pic.jpg' id='profile-pic' />
         </div>
         <nav className='about-nav'>
-          <ul className='about-nav flex-row content-center'>
-            <li className='about-nav' onClick={() => this.setSection("intro")}>I N T R O</li>
-            <li className='about-nav' onClick={() => this.setSection("skills")}>S K I L L S</li>
-          </ul>
+            {this.state.isIntro ? (
+              <ul className='about-nav flex-row content-center'>
+                <li className='about-nav selected' onClick={() => this.setSection("intro")}>I N T R O</li>
+                <li className='about-nav' onClick={() => this.setSection("skills")}>S K I L L S</li>
+              </ul>
+            ) : (
+              <ul className='about-nav flex-row content-center'>
+                <li className='about-nav' onClick={() => this.setSection("intro")}>I N T R O</li>
+                <li className='about-nav selected' onClick={() => this.setSection("skills")}>S K I L L S</li>
+              </ul>
+            )}
         </nav>
         <div className='flex-row content-center'>
             {this.state.isIntro ? (
