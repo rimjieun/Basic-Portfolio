@@ -10,33 +10,37 @@ class Projects extends Component {
           id: 1,
           title: 'MeetPoint',
           imgURL: './assets/img/meetpoint.jpg',
-          color: 'rgba(204, 153, 0, 0.6)',
-          ongoing: false,
+          githubURL: 'https://github.com/rimjieun/Meet-Point',
+          color: 'rgba(153, 102, 0, 0.8)',
+          current: false,
           description: 'MeetPoint uses the Yelp search engine to find meeting locations conveniently located from all parties of a group.'
         },
         {
           id: 2,
           title: 'SignatureFD Paperwork',
           imgURL: './assets/img/signaturefd.jpeg',
-          color: 'rgba(0, 51, 153, 0.6)',
-          ongoing: false,
+          githubURL: 'https://github.com/rimjieun/SignatureFDPaperWork',
+          color: 'rgba(25, 25, 77, 0.8)',
+          current: false,
           description: 'SignatureFD Paperwork was developed to streamline the onboarding process of new employees at SignatureFD, a financial planning company.'
         },
         {
           id: 3,
           title: 'Braves Concessions',
           imgURL: './assets/img/braves.jpeg',
-          color: 'rgba(128, 0, 0, 0.6)',
-          ongoing: false,
-          description: 'Hello'
+          githubURL: 'https://github.com/rimjieun/bravesapp',
+          color: 'rgba(128, 0, 0, 0.8)',
+          current: false,
+          description: 'Braves Concessions is a mobile app born from the Atlanta Braves Hackathon at SunTrust Park. It allows baseball fans to put in mobile orders and pick up food from the nearest concession stand.'
         },
         {
           id: 4,
-          title: 'Dekalb Jail Scraper',
+          title: 'DeKalb Jail Scraper',
           imgURL: './assets/img/bail.jpeg',
-          color: 'rgba(51, 102, 0, 0.6)',
-          ongoing: true,
-          description: 'Hello'
+          githubURL: 'https://github.com/rimjieun/aclu-bail-reform/tree/master/src/webscraper/dekalb',
+          color: 'rgba(0, 51, 0, 0.8)',
+          current: true,
+          description: 'DeKalb Jail Scraper is a Python-based web scraper that allows you to scrape DeKalb County jail records. The purpose of this project is to help build a case for the ACLU Bail Reform Project in the state of Georgia. Currently the scope of the project covers 16 different counties, DeKalb County being one of them. The scraper can output CSV files for current day, custom date, and all jail records.'
         }
       ]
     };
@@ -44,26 +48,22 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className='container projects-container flex-row content-center'>
-        <div className='not-ongoing-container flex-col content-center'>
-          <h1 className='not-ongoing projects'>Check out past projects I've worked on solo and as a group!</h1>
-          <div className='not-ongoing projects flex-row'>
-            {this.state.projects.map(project => {
-              if (project.ongoing === false) {
-                return <ProjectItem key={project.id} imgURL={project.imgURL} color={project.color} title={project.title} description={project.description} />
-              }
-            })}
-          </div>
+      <div className='flex-col container projects'>
+        <h1 className='projects'>I'm currently working on . . .</h1>
+        <div className='current flex-col'>
+          {this.state.projects.map(project => {
+            if (project.current === true) {
+              return <ProjectItem key={project.id} imgURL={project.imgURL} githubURL={project.githubURL} color={project.color} title={project.title} description={project.description} current={project.current} />
+            }
+          })}
         </div>
-        <div className='ongoing-container flex-col content-center'>
-          <h1 className='ongoing projects'>Here are some projects I'm currently working on with other developers...</h1>
-          <div className='ongoing projects flex-col'>
-            {this.state.projects.map(project => {
-              if (project.ongoing === true) {
-                return <ProjectItem key={project.id} imgURL={project.imgURL} color={project.color} title={project.title} description={project.description} />
-              }
-            })}
-          </div>
+        <h1 className='projects'>Check out my past projects . . .</h1>
+        <div className='not-current flex-row'>
+          {this.state.projects.map(project => {
+            if (project.current === false) {
+              return <ProjectItem key={project.id} imgURL={project.imgURL} githubURL={project.githubURL} color={project.color} title={project.title} description={project.description} current={project.current} />
+            }
+          })}
         </div>
       </div>
     );

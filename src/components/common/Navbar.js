@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => (
   <nav className='main-nav'>
     <div className='container flex-row'>
-      <div className='inline'>
+      <div className='inline logo'>
         <div id='title' className='inline'>J I E U N&nbsp;&nbsp;R I M</div>
         <div id='subtitle'>F U L L&nbsp;&nbsp;&nbsp;S T A C K&nbsp;&nbsp;&nbsp;D E V E L O P E R</div>
       </div>
