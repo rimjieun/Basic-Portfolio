@@ -28,6 +28,10 @@ const Skills = () => (
     </span>
     <div className='skills-icons flex-row'>
       <div className='tooltip'>
+        <i class="devicon-python-plain skills-icon"></i>
+        <span className='tooltiptext'>Python</span>
+      </div>
+      <div className='tooltip'>
         <i className="devicon-html5-plain skills-icon"></i>
         <span className='tooltiptext'>HTML5</span>
       </div>
