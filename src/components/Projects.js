@@ -35,7 +35,7 @@ class Projects extends Component {
         },
         {
           id: 4,
-          title: 'DeKalb Jail Scraper',
+          title: 'DeKalb County Jail Scraper',
           imgURL: './assets/img/bail.jpeg',
           githubURL: 'https://github.com/rimjieun/aclu-bail-reform/tree/master/src/webscraper/dekalb',
           color: 'rgba(0, 51, 0, 0.8)',
