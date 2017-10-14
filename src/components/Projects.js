@@ -40,7 +40,7 @@ class Projects extends Component {
           githubURL: 'https://github.com/rimjieun/aclu-bail-reform/tree/master/src/webscraper/dekalb',
           color: 'rgba(0, 51, 0, 0.8)',
           current: true,
-          description: 'DeKalb Jail Scraper is a Python-based web scraper that allows you to scrape DeKalb County jail records. The purpose of this project is to help build a case for the ACLU Bail Reform Project in the state of Georgia. Currently the scope of the project covers 16 different counties, DeKalb County being one of them. The scraper can output CSV files for current day, custom date, and all jail records.'
+          description: 'DeKalb County Jail Scraper is a Python-based web scraper that allows you to scrape DeKalb County jail records. The purpose of this project is to help build a case for the ACLU Bail Reform Project in the state of Georgia. Currently the scope of the project covers 16 different counties, DeKalb County being one of them. The scraper can output CSV files for current day, custom date, and all jail records.'
         }
       ]
     };
