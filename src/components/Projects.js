@@ -17,12 +17,12 @@ class Projects extends Component {
         },
         {
           id: 2,
-          title: 'SignatureFD Paperwork',
+          title: 'SignatureFD Onboard',
           imgURL: './assets/img/signaturefd.jpeg',
           githubURL: 'https://github.com/rimjieun/SignatureFDPaperWork',
           color: 'rgba(25, 25, 77, 0.8)',
           current: false,
-          description: 'SignatureFD Paperwork was developed to streamline the onboarding process of new employees at SignatureFD, a financial planning company.'
+          description: 'SignatureFD Onboard was developed to streamline the onboarding process of new employees at SignatureFD, a financial planning company.'
         },
         {
           id: 3,
