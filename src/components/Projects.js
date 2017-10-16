@@ -9,6 +9,8 @@ class Projects extends Component {
         {
           id: 1,
           title: 'MeetPoint',
+          useIcon: true,
+          iconPath: 'fa fa-map-pin',
           imgURL: './assets/img/meetpoint.jpg',
           githubURL: 'https://github.com/rimjieun/Meet-Point',
           color: 'rgba(153, 102, 0, 0.8)',
@@ -18,6 +20,8 @@ class Projects extends Component {
         {
           id: 2,
           title: 'SignatureFD Onboard',
+          useIcon: true,
+          iconPath: 'fa fa-file-text',
           imgURL: './assets/img/signaturefd.jpeg',
           githubURL: 'https://github.com/rimjieun/SignatureFDPaperWork',
           color: 'rgba(25, 25, 77, 0.8)',
@@ -27,6 +31,8 @@ class Projects extends Component {
         {
           id: 3,
           title: 'Braves Concessions',
+          useIcon: false,
+          iconPath: './assets/img/baseball.png',
           imgURL: './assets/img/braves.jpeg',
           githubURL: 'https://github.com/rimjieun/bravesapp',
           color: 'rgba(128, 0, 0, 0.8)',
@@ -36,6 +42,8 @@ class Projects extends Component {
         {
           id: 4,
           title: 'DeKalb County Jail Scraper',
+          useIcon: true,
+          iconPath: 'fa fa-archive',
           imgURL: './assets/img/bail.jpeg',
           githubURL: 'https://github.com/rimjieun/aclu-bail-reform/tree/master/src/webscraper/dekalb',
           color: 'rgba(0, 51, 0, 0.8)',
@@ -53,7 +61,7 @@ class Projects extends Component {
         <div className='current flex-col'>
           {this.state.projects.map(project => {
             if (project.current === true) {
-              return <ProjectItem key={project.id} imgURL={project.imgURL} githubURL={project.githubURL} color={project.color} title={project.title} description={project.description} current={project.current} />
+              return <ProjectItem key={project.id} useIcon={project.useIcon} iconPath={project.iconPath} imgURL={project.imgURL} githubURL={project.githubURL} color={project.color} title={project.title} description={project.description} current={project.current} />
             }
           })}
         </div>
@@ -61,7 +69,7 @@ class Projects extends Component {
         <div className='not-current flex-row'>
           {this.state.projects.map(project => {
             if (project.current === false) {
-              return <ProjectItem key={project.id} imgURL={project.imgURL} githubURL={project.githubURL} color={project.color} title={project.title} description={project.description} current={project.current} />
+              return <ProjectItem key={project.id} useIcon={project.useIcon} iconPath={project.iconPath} imgURL={project.imgURL} githubURL={project.githubURL} color={project.color} title={project.title} description={project.description} current={project.current} />
             }
           })}
         </div>

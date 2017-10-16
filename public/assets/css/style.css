@@ -194,7 +194,7 @@ i.skills-icon:hover {
 /*PROJECTS PAGE*/
 /*Project Containers*/
 div.projects {
-  margin-top: 30px;
+  margin-top: 25px;
   padding: 0 50px;
 }
 
@@ -244,14 +244,28 @@ div.project-layer {
   border-radius: 5px;
 }
 
-h1.project-title {
-  font-size: 30px;
+div.project-title {
   position: absolute;
   z-index: 1;
+  top: 15%;
+  left: 25px;
+  min-width: 250px;
+}
+
+h1.project-title {
+  font-size: 27px;
   color: white;
   max-width: 210px;
-  vertical-align: middle;
-  line-height: 35px
+  line-height: 35px;
+}
+
+i.project-icon,
+img.project-icon {
+  color: white;
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
 }
 
 p.project-description,
