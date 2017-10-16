@@ -23,7 +23,7 @@ class Projects extends Component {
           useIcon: true,
           iconPath: 'fa fa-file-text',
           imgURL: './assets/img/signaturefd.jpeg',
-          githubURL: 'https://github.com/rimjieun/SignatureFDPaperWork',
+          githubURL: 'https://github.com/rimjieun/SignatureFDPaperWork#signaturefd-onboard',
           color: 'rgba(25, 25, 77, 0.8)',
           current: false,
           description: 'SignatureFD Onboard was developed to streamline the onboarding process of new employees at SignatureFD, a financial planning company.'
@@ -45,7 +45,7 @@ class Projects extends Component {
           useIcon: true,
           iconPath: 'fa fa-archive',
           imgURL: './assets/img/bail.jpeg',
-          githubURL: 'https://github.com/rimjieun/aclu-bail-reform/tree/master/src/webscraper/dekalb',
+          githubURL: 'https://github.com/rimjieun/aclu-bail-reform/tree/master/src/webscraper/dekalb#web-scraper-for-dekalb-county-jail-records',
           color: 'rgba(0, 51, 0, 0.8)',
           current: true,
           description: 'DeKalb County Jail Scraper is a Python-based web scraper that allows you to scrape DeKalb County jail records. The purpose of this project is to help build a case for the ACLU Bail Reform Project in the state of Georgia. The scraper can output CSV files for current day, custom date, and all jail records.'
