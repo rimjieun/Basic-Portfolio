@@ -22,7 +22,7 @@ class Projects extends Component {
           githubURL: 'https://github.com/rimjieun/SignatureFDPaperWork',
           color: 'rgba(25, 25, 77, 0.8)',
           current: false,
-          description: 'ignatureFD Onboard was developed to streamline the onboarding process of new employees at SignatureFD, a financial planning company.'
+          description: 'SignatureFD Onboard was developed to streamline the onboarding process of new employees at SignatureFD, a financial planning company.'
         },
         {
           id: 3,
