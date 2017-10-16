@@ -25,7 +25,7 @@ class Projects extends Component {
           imgURL: './assets/img/signaturefd.jpeg',
           githubURL: 'https://github.com/rimjieun/SignatureFDPaperWork#signaturefd-onboard',
           color: 'rgba(25, 25, 77, 0.8)',
-          current: false,
+          current: false
           description: 'SignatureFD Onboard was developed to streamline the onboarding process of new employees at SignatureFD, a financial planning company.'
         },
         {
