@@ -19,7 +19,7 @@ class Projects extends Component {
         },
         {
           id: 2,
-          title: 'SignatureFD Onboar',
+          title: 'SignatureFD Onboard',
           useIcon: true,
           iconPath: 'fa fa-file-text',
           imgURL: './assets/img/signaturefd.jpeg',
