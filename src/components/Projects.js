@@ -34,7 +34,7 @@ class Projects extends Component {
           useIcon: false,
           iconPath: './assets/img/baseball.png',
           imgURL: './assets/img/braves.jpeg',
-          githubURL: 'https://github.com/rimjieun/bravesapp',
+          githubURL: 'https://github.com/rimjieun/bravesapp#braves-concessions',
           color: 'rgba(128, 0, 0, 0.8)',
           current: false,
           description: 'Braves Concessions is a mobile app born from the Atlanta Braves Hackathon at SunTrust Park. It allows baseball fans to put in mobile orders and pick up food from the nearest concession stand.'
