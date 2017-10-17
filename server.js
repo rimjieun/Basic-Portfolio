@@ -14,8 +14,8 @@ app.use(express.static(__dirname + '/public'));
 app.post('/send', (req, res) => {
   // console.log('send route: ', req.body);
   const output = `
-    <p>Name: ${req.body.name}</p><br />
-    <p>Email: ${req.body.email}</p><br />
+    <p>Name: ${req.body.name}</p>
+    <p>Email: ${req.body.email}</p>
     <p>Message: ${req.body.message}</p>
   `;
   nodemailer.createTestAccount((err, account) => {
@@ -41,7 +41,7 @@ app.post('/send', (req, res) => {
     let mailOptions = {
       from: 'My Portfolio <' + process.env.USER + '>',
       to: process.env.EMAIL,
-      subject: 'Portfolio Contact Request',
+      subject: 'Contact Request',
       text: 'Hello world?',
       html: output
     }
