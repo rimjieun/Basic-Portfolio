@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const ContactForm = props => (
-  <form className='flex-col contact' action='/submit' method='POST'>
+  <form className='flex-col contact' action='/send' method='POST'>
     <h1 className='contact'>Want to work on a project together?<br />Send me a message!</h1>
     <div className='form-item flex-row'>
       <label htmlFor='name' className='form-item'>

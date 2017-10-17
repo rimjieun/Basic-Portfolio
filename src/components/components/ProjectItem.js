@@ -10,14 +10,15 @@ const ProjectItem = props => {
           <div className='project-item flex-row' style={{backgroundImage: `url(${props.imgURL})`, backgroundSize: 'cover'}}>
             <div className='project-layer' style={{backgroundColor: `${props.color}`}}></div>
             <div className='flex-col project-title content-center'>
+              <h1 className='project-title'>
+                {props.title}
+              </h1>
               {props.useIcon ? (
                 <i className={`${props.iconPath} project-icon`} aria-hidden="true"></i>
               ) : (
                 <img src={props.iconPath} className='project-icon' />
               )}
-              <h1 className='project-title'>
-                {props.title}
-              </h1>
+              
             </div>
           </div>
         </a>
@@ -31,14 +32,14 @@ const ProjectItem = props => {
           <div className='project-item flex-row' style={{backgroundImage: `url(${props.imgURL})`, backgroundSize: 'cover'}}>
             <div className='project-layer' style={{backgroundColor: `${props.color}`}}></div>
             <div className='flex-col project-title content-center'>
+              <h1 className='project-title'>
+                {props.title}
+              </h1>
               {props.useIcon ? (
                 <i className={`${props.iconPath} project-icon`} aria-hidden="true"></i>
               ) : (
                 <img src={props.iconPath} className='project-icon' />
               )}
-              <h1 className='project-title'>
-                {props.title}
-              </h1>
             </div>
           </div>
         </a>

@@ -247,7 +247,7 @@ div.project-layer {
 div.project-title {
   position: absolute;
   z-index: 1;
-  top: 15%;
+  bottom: 15%;
   left: 25px;
   min-width: 250px;
 }
@@ -265,7 +265,7 @@ img.project-icon {
   font-size: 40px;
   width: 40px;
   height: 40px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 p.project-description,
