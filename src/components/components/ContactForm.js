@@ -9,7 +9,8 @@ class ContactForm extends Component {
     this.captchaClick = this.captchaClick.bind(this);
   }
 
-  captchaClick() {
+  captchaClick(asdf) {
+    console.log(asdf);
     this.setState({disabled: false});
   }
 
@@ -37,7 +38,7 @@ class ContactForm extends Component {
           <textarea rows='6' name='message' id='message' className='form-item' placeholder='Message'></textarea>
         </div>
         <div className='form-item flex-row submit'>
-          <div className="g-recaptcha" data-sitekey="6LduwTQUAAAAAEZCA6QbbpQJmltA77oxElfo2k2R" data-callback={() => this.captchaClick()}></div>
+          <div className="g-recaptcha" data-sitekey="6LduwTQUAAAAAEZCA6QbbpQJmltA77oxElfo2k2R" data-callback={(asdf) => this.captchaClick(asdf)}></div>
           <input type='submit' id='submit' value='S E N D' onSubmit={e => e.preventDefault()} disabled={this.state.disabled} />
         </div>
       </form>
