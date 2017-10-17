@@ -23,7 +23,7 @@ const ContactForm = props => (
     </div>
     <div className='form-item flex-row submit'>
       <div className="g-recaptcha" data-sitekey="6LduwTQUAAAAAEZCA6QbbpQJmltA77oxElfo2k2R"></div>
-      <input type='submit' id='submit' value='S E N D' onSubmit={e => e.preventDefault()}/>
+      <input type='submit' id='submit' value='S E N D' onSubmit={e => e.preventDefault()} disabled />
     </div>
   </form>
 );

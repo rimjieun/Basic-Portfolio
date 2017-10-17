@@ -18,6 +18,7 @@ app.post('/send', (req, res) => {
     <p>Email: ${req.body.email}</p>
     <p>Message: ${req.body.message}</p>
   `;
+  
   nodemailer.createTestAccount((err, account) => {
 
     if (err) {
