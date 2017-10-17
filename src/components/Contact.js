@@ -28,17 +28,12 @@ class Contact extends Component {
       ],
       disabled: true
     };
-    this.enableSend = this.enableSend.bind(this);
-  }
-
-  enableSend() {
-    this.setState({disabled: false})
   }
 
   render() {
     return (
       <div className='container flex-row contact'>
-        <ContactForm enableSend={this.enableSend} disabled={this.state.disabled}/>
+        <ContactForm />
         <div className='social-icons'>
           {this.state.icons.map(icon => {
             return <SocialIcon key={icon.id} label={icon.label} classes={icon.classes} url={icon.url} />
