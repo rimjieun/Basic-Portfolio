@@ -34,10 +34,6 @@ class Contact extends Component {
     this.onloadCallback();
   }
 
-  componentDidUpdate() {
-    this.onloadCallback();
-  }
-
   onloadCallback() {
     console.log('onload working')
     grecaptcha.render('recaptcha', {
