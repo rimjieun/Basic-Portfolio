@@ -8,7 +8,7 @@ class Projects extends Component {
       projects: [
         {
           id: 1,
-          title: 'MeetPoint',
+          title: 'Meet-Point',
           useIcon: true,
           iconPath: 'fa fa-map-pin',
           imgURL: './assets/img/meetpoint.jpg',
