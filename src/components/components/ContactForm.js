@@ -22,7 +22,7 @@ const ContactForm = props => (
       <textarea rows='6' name='message' id='message' className='form-item' placeholder='Message'></textarea>
     </div>
     <div className='form-item flex-row submit'>
-      <div className="g-recaptcha"></div>
+      <div id="recaptcha"></div>
       <input type='submit' id='submit' value='S E N D' onSubmit={e => e.preventDefault()} disabled />
     </div>
   </form>
