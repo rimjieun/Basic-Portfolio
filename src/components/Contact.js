@@ -29,15 +29,6 @@ class Contact extends Component {
     };
   }
 
-  componentWillMount() {
-    fetch('/captcha').then(response => response.json())
-    .then(responseJson => {
-      console.log(responseJson);
-    }).catch(error => {
-      console.log(error);
-    })
-  }
-
   render() {
     return (
       <div className='container flex-row contact'>

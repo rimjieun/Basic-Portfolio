@@ -11,10 +11,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
-app.get('/captcha', (req, res) => {
-  res.json(process.env.CAPTCHA);
-});
-
 app.post('/send', (req, res) => {
   // console.log('send route: ', req.body);
   const output = `
