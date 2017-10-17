@@ -324,10 +324,9 @@ textarea.form-item {
 
 div.submit {
   justify-content: flex-end;
-  /*align-items: flex-end;*/
 }
 
-div.g-recaptcha {
+div#recaptcha {
   margin-right: 28px;
 }
 
