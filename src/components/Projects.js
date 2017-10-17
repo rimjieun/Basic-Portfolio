@@ -12,7 +12,7 @@ class Projects extends Component {
           useIcon: true,
           iconPath: 'fa fa-map-pin',
           imgURL: './assets/img/meetpoint.jpg',
-          githubURL: 'https://github.com/rimjieun/Meet-Point',
+          githubURL: 'https://github.com/rimjieun/Meet-Point#meet-point',
           color: 'rgba(153, 102, 0, 0.8)',
           current: false,
           description: 'MeetPoint uses the Yelp search engine to find meeting locations conveniently located from all parties of a group.'
