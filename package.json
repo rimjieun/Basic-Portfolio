@@ -9,8 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "npm-run-all -p run:mongo watch:build watch:server",
-    "run:mongo": "mongod",
+    "dev": "npm-run-all -p watch:build watch:server",
     "watch:build": "webpack -w",
     "watch:server": "nodemon server.js"
   },
