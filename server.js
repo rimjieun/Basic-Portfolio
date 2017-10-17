@@ -14,12 +14,9 @@ app.use(express.static(__dirname + '/public'));
 app.post('/send', (req, res) => {
   // console.log('send route: ', req.body);
   const output = `
-    <h3>Contact Details</h3>
-    <ul>
-      <li>Name: ${req.body.name}</li>
-      <li>Email: ${req.body.email}</li>
-      <li>Message: ${req.body.message}</li>
-    </ul>
+    <p>Name: ${req.body.name}</p><br />
+    <p>Email: ${req.body.email}</p><br />
+    <p>Message: ${req.body.message}</p>
   `;
   nodemailer.createTestAccount((err, account) => {
 
