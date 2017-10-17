@@ -22,8 +22,8 @@ const ContactForm = props => (
       <textarea rows='6' name='message' id='message' className='form-item' placeholder='Message'></textarea>
     </div>
     <div className='form-item flex-row submit'>
-      <div className="g-recaptcha" data-sitekey="6LduwTQUAAAAAEZCA6QbbpQJmltA77oxElfo2k2R"></div>
-      <input type='submit' id='submit' value='S E N D' onSubmit={e => e.preventDefault()} disabled />
+      <div className="g-recaptcha" data-sitekey="6LduwTQUAAAAAEZCA6QbbpQJmltA77oxElfo2k2R" data-callback={() => props.enableSend()}></div>
+      <input type='submit' id='submit' value='S E N D' onSubmit={e => e.preventDefault()} disabled={props.disabled} />
     </div>
   </form>
 );
