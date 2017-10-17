@@ -323,16 +323,18 @@ textarea.form-item {
 }
 
 div.submit {
-  float: right;
-  display: inline;
+  justify-content: flex-end;
+  /*align-items: flex-end;*/
+}
+
+div.g-recaptcha {
+  margin-right: 28px;
 }
 
 input#submit {
   font-size: 15px;
   width: 100px;
   height: 40px;
-  /*align-self: right;*/
-  float: right;
   border: none;
   outline: none;
   background: #33cccc;
