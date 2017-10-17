@@ -31,8 +31,16 @@ class Contact extends Component {
   }
 
   componentDidMount() {
-    console.log('contact loaded')
+    this.onloadCallback();
   }
+
+  onloadCallback() {
+    console.log('onload working')
+    grecaptcha.render('recaptcha', {
+      sitekey: '6LduwTQUAAAAAEZCA6QbbpQJmltA77oxElfo2k2R',
+      callback: recaptchaCallback
+    });
+  };
 
   render() {
     return (

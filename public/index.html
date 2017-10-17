@@ -30,15 +30,6 @@
   function recaptchaCallback() {
     $('#submit').removeAttr('disabled');
   }
-
-  var onloadCallback = function() {
-    console.log('onload working')
-    grecaptcha.render('recaptcha', {
-      sitekey: '6LduwTQUAAAAAEZCA6QbbpQJmltA77oxElfo2k2R',
-      callback: recaptchaCallback
-    });
-  };
-
   
   </script>
 </body>
