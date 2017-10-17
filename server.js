@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static(__dirname + './public'));
+app.use(express.static(__dirname + '/public'));
 
 app.post('/submit', function(req, res) {
   console.log('submit route: ', req.body);
