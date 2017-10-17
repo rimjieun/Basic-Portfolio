@@ -30,6 +30,10 @@ class Contact extends Component {
     };
   }
 
+  componentDidMount() {
+    console.log('contact loaded')
+  }
+
   render() {
     return (
       <div className='container flex-row contact'>
