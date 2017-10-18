@@ -345,6 +345,11 @@ div#recaptcha {
   margin-right: 28px;
 }
 
+div#submit-btn-container {
+  display: inline;
+  height: 40px;
+}
+
 input#submit {
   font-size: 15px;
   width: 100px;
