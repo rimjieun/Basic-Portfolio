@@ -13,13 +13,7 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <script type='text/javascript'>
     function recaptchaCallback() {
-      console.log('hello');
-      console.log(grecaptcha.getResponse('recaptcha'));
-      // if ($('#name').val() !== '' && $('#email').val() !== '' && $('#message').val() !== '') {
-      //   $('#submit').removeAttr('disabled');
-      // } else {
-
-      // }
+      $('#submit').removeAttr('disabled');
     }
     function onloadCallback() {
       grecaptcha.render('recaptcha', {

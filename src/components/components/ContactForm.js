@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const ContactForm = props => (
-  <form className='flex-col contact' action='/send' method='POST'>
+  <form className='flex-col contact' id='contact-form' action='/send' method='POST'>
     <h1 className='contact'>Want to work on a project together?<br />Send me a message!</h1>
     <p className='form-response'></p>
     <div className='form-item flex-row'>
@@ -24,7 +24,7 @@ const ContactForm = props => (
     </div>
     <div className='form-item flex-row submit'>
       <div id='recaptcha'></div>
-      <input type='submit' id='submit' value='S E N D' onSubmit={e => e.preventDefault()} disabled />
+      <input type='submit' id='submit' value='S E N D' onSubmit={props.handleSubmit} disabled />
     </div>
   </form>
 );
