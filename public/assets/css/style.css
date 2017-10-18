@@ -362,10 +362,15 @@ input#submit {
   font-family: 'Quicksand', sans-serif;
 }
 
-input#submit:hover {
+input#submit:disabled {
   background: #1f7a7a;
+}
+
+input#submit:hover {
   cursor: pointer;
 }
+
+
 
 i.contact,
 i.social-icon {
