@@ -30,9 +30,17 @@ class Contact extends Component {
         name: false,
         email: false,
         message: false
-      }
+      },
+      field: {
+        name: '',
+        email: '',
+        message: ''
+      },
+      response: ''
     };
     this.activateField = this.activateField.bind(this);
+    this.updateField = this.updateField.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentDidMount() {
@@ -74,10 +82,29 @@ class Contact extends Component {
     }
   }
 
+  updateField(e) {
+    this.setState({
+      field: {
+        [e.target.name]: e.target.value
+      }
+    });
+  }
+
+  // handleSubmit(e) {
+  //   e.preventDefault();
+  //   if (this.state.field.name !== '' && this.state.field.email !== '' && this.state.field.message !== '') {
+  //     document.getElementById('submit').removeAttribute('disabled');
+  //   } else {
+  //     this.setState({
+  //       response: '* Please fill in all fields.'
+  //     })
+  //   }
+  // }
+
   render() {
     return (
       <div className='container flex-row contact'>
-        <ContactForm active={this.state.active} activateField={this.activateField} />
+        <ContactForm active={this.state.active} activateField={this.activateField} updateField={this.updateField} />
         <div className='social-icons'>
           {this.state.icons.map(icon => {
             return <SocialIcon key={icon.id} label={icon.label} classes={icon.classes} url={icon.url} />

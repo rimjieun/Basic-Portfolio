@@ -313,6 +313,10 @@ div.form-item {
   margin: 20px 0;
 }
 
+p.invalid-message.hidden {
+  display: none;
+}
+
 input.form-item,
 textarea.form-item {
   width: 100%;

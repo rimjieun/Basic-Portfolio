@@ -12,7 +12,6 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/public'));
 
 app.post('/send', (req, res) => {
-  // console.log('send route: ', req.body);
   const output = `
     <p>Name: ${req.body.name}</p>
     <p>Email: ${req.body.email}</p>
