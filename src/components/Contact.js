@@ -31,11 +31,11 @@ class Contact extends Component {
   }
 
   componentDidMount() {
-    this.onloadCallback();
+    this.loadRecaptcha();
   }
 
-  onloadCallback() {
-    console.log('onload working')
+  loadRecaptcha() {
+    console.log('react onload')
     grecaptcha.render('recaptcha', {
       sitekey: '6LduwTQUAAAAAEZCA6QbbpQJmltA77oxElfo2k2R',
       callback: recaptchaCallback

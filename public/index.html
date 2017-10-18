@@ -11,6 +11,18 @@
   <!-- Devicon CDN -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <script type='text/javascript'>
+    function recaptchaCallback() {
+      $('#submit').removeAttr('disabled');
+    }
+    var onloadCallback = function() {
+      console.log('html onload')
+      grecaptcha.render('recaptcha', {
+        sitekey: '6LduwTQUAAAAAEZCA6QbbpQJmltA77oxElfo2k2R',
+        callback: recaptchaCallback
+      });
+    };
+  </script>
 </head>
 
 <body>
@@ -19,19 +31,11 @@
   <div id='app'></div>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <!-- All of our JS code will be transpiled into this bundle.js file -->
-  <script src='bundle.js'></script>
+  <script src='/bundle.js'></script>
   <script src='https://use.fontawesome.com/6b00624f40.js'></script>
-  <script src='./assets/js/index.js'></script>
+  <script src='/assets/js/index.js'></script>
   <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
   <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
-
-  <script>
-
-  function recaptchaCallback() {
-    $('#submit').removeAttr('disabled');
-  }
-  
-  </script>
 </body>
 
 </html>
