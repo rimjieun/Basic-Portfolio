@@ -26,8 +26,13 @@ class Contact extends Component {
           url: 'https://instagram.com/yakuccino'
         }
       ],
-      disabled: true
+      active: {
+        name: false,
+        email: false,
+        message: false
+      }
     };
+    this.activateField = this.activateField.bind(this);
   }
 
   componentDidMount() {
@@ -41,10 +46,38 @@ class Contact extends Component {
     });
   };
 
+  activateField(e) {
+    if (e.target.name === 'name') {
+      this.setState({
+        active: {
+          name: true,
+          email: false,
+          message: false
+        }
+      });
+    } else if (e.target.name === 'email') {
+      this.setState({
+        active: {
+          name: false,
+          email: true,
+          message: false
+        }
+      });
+    } else if (e.target.name === 'message') {
+      this.setState({
+        active: {
+          name: false,
+          email: false,
+          message: true
+        }
+      });
+    }
+  }
+
   render() {
     return (
       <div className='container flex-row contact'>
-        <ContactForm />
+        <ContactForm active={this.state.active} activateField={this.activateField} />
         <div className='social-icons'>
           {this.state.icons.map(icon => {
             return <SocialIcon key={icon.id} label={icon.label} classes={icon.classes} url={icon.url} />

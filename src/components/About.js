@@ -7,20 +7,25 @@ class About extends Component {
   constructor() {
     super();
     this.state = {
-      isIntro: true
+      isIntro: true,
+      isSkills: false
     };
-    this.setSection = this.setSection.bind(this);
+    this.toggleClass = this.toggleClass.bind(this);
   }
 
-  setSection(sectionName) {
-    if (sectionName === "intro") {
-      this.setState({isIntro: true});
+  toggleClass() {
+    if (this.state.isIntro) {
+      this.setState({
+        isIntro: false,
+        isSkills: true
+      });
     } else {
-      this.setState({isIntro: false});
+      this.setState({
+        isIntro: true,
+        isSkills: false
+      });
     }
   }
-
-
 
   render() {
     return (
@@ -29,17 +34,10 @@ class About extends Component {
           <img src='./assets/img/profile-pic.jpg' id='profile-pic' />
         </div>
         <nav className='about-nav'>
-            {this.state.isIntro ? (
-              <ul className='about-nav flex-row content-center'>
-                <li className='about-nav selected' onClick={() => this.setSection("intro")}>I N T R O</li>
-                <li className='about-nav' onClick={() => this.setSection("skills")}>S K I L L S</li>
-              </ul>
-            ) : (
-              <ul className='about-nav flex-row content-center'>
-                <li className='about-nav' onClick={() => this.setSection("intro")}>I N T R O</li>
-                <li className='about-nav selected' onClick={() => this.setSection("skills")}>S K I L L S</li>
-              </ul>
-            )}
+          <ul className='about-nav flex-row content-center'>
+            <li className={this.state.isIntro ? 'selected about-nav' : 'about-nav'} onClick={this.toggleClass}>I N T R O</li>
+            <li className={this.state.isSkills ? 'selected about-nav' : 'about-nav'} onClick={this.toggleClass}>S K I L L S</li>
+          </ul>
         </nav>
         <div className='flex-row content-center'>
             {this.state.isIntro ? (
