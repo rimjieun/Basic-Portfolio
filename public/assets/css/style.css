@@ -122,13 +122,12 @@ li.about-nav:hover {
 
 li.selected {
   color: #33cccc;
-  font-weight: bold;
 }
 
 /*Intro*/
 div.intro {
   color: grey;
-  width: 1080px;
+  width: 900px;
 }
 
 .center {
@@ -136,7 +135,7 @@ div.intro {
 }
 
 p.intro {
-  line-height: 45px;
+  line-height: 35px;
   font-size: 18px;
   margin: 20px;
 }
@@ -301,9 +300,9 @@ div.contact {
 
 /*Form*/
 form.contact {
-  width: 700px;
+  width: 600px;
   min-height: 400px;
-  margin: 100px 20px;
+  margin: 100px 65px;
   color: grey;
   padding-right: 50px;
 }
