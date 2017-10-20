@@ -32,7 +32,6 @@ class Contact extends Component {
         message: false
       }
     };
-    this.activateField = this.activateField.bind(this);
   }
 
   componentDidMount() {
@@ -45,34 +44,6 @@ class Contact extends Component {
       callback: recaptchaCallback
     });
   };
-
-  activateField(e) {
-    if (e.target.name === 'name') {
-      this.setState({
-        active: {
-          name: true,
-          email: false,
-          message: false
-        }
-      });
-    } else if (e.target.name === 'email') {
-      this.setState({
-        active: {
-          name: false,
-          email: true,
-          message: false
-        }
-      });
-    } else if (e.target.name === 'message') {
-      this.setState({
-        active: {
-          name: false,
-          email: false,
-          message: true
-        }
-      });
-    }
-  }
 
   render() {
     return (

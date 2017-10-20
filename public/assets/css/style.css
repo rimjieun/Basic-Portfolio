@@ -50,6 +50,9 @@ nav.main-nav {
 div.logo {
   width: 310px;
   text-align: center;
+
+  margin-left: 80px;
+
 }
 
 div#title {
@@ -66,6 +69,9 @@ div#subtitle {
 nav.main-nav ul {
   width: 300px;
   height: 70px;
+
+  margin-right: 80px;
+
 }
 
 nav.main-nav ul .nav-btn {
@@ -96,7 +102,6 @@ img#profile-pic {
 }
 
 ul.about-nav {
-  /*margin-bottom: 10px;*/
   padding-bottom: 20px;
 }
 
@@ -133,7 +138,6 @@ p.intro {
   line-height: 35px;
   font-size: 18px;
   margin: 20px;
-  /*width: 500px;*/
 }
 
 i.fa.intro {
@@ -182,7 +186,6 @@ i.skills-icon:hover {
     left: 60%;
     margin-left: -60px;
     font-size: 12px;
-    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
     opacity: 0;
     transition: opacity 1s;
     line-height: 15px;
@@ -299,8 +302,9 @@ div.contact {
 form.contact {
   width: 500px;
   min-height: 400px;
-  margin: 100px 0;
+  margin: 100px 115px;
   color: grey;
+  padding-right: 50px;
 }
 
 h1.contact {
@@ -326,14 +330,16 @@ textarea.form-item {
   border-bottom: 1px grey solid;
   background: transparent;
   font-family: 'Quicksand', sans-serif;
+  order: 2;
 }
 
-input.form-item.selected,
-textarea.form-item.selected {
+input.form-item:focus,
+textarea.form-item:focus {
   border-bottom: 1px #1f7a7a solid;
 }
 
-i.fa.selected {
+input.form-item:focus + label.form-item,
+textarea.form-item:focus + label.form-item {
   color: #1f7a7a;
 }
 
@@ -370,8 +376,6 @@ input#submit:hover {
   cursor: pointer;
 }
 
-
-
 i.contact,
 i.social-icon {
   font-size: 40px;
@@ -380,7 +384,7 @@ i.social-icon {
 
 /*Social Icons*/
 div.social-icons {
-  margin: 100px 50px;
+  margin: 55px 0 100px;
   padding: 110px 0 0 40px;
   border-left: 1px solid lightgrey;
 }
