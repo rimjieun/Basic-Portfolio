@@ -8,7 +8,7 @@ const Intro = () => (
     <p className='intro intro-2'>
       I love <span className='bold'>learning new languages</span>, both human and computer. I love <span className='bold'>attending hackathons</span> and meeting new people
       to collaborate with on projects. I believe technology to be a means to an end,
-      and hope that my small efforts can <span className='bold'>help make the world a better place</span>.
+      and hope that my efforts can <span className='bold'>help make the world a better place</span>.
     </p>
   </div>
 );
