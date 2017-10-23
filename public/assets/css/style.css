@@ -102,7 +102,7 @@ img#profile-pic {
 }
 
 ul.about-nav {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 li.about-nav {
@@ -137,7 +137,7 @@ div.intro {
 }
 
 p.intro {
-  line-height: 43px;
+  line-height: 38px;
   font-size: 18px;
   margin: 20px;
 }
