@@ -15,19 +15,23 @@
   <script src='https://use.fontawesome.com/6b00624f40.js'></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type='text/javascript'>
-    function recaptchaCallback() {
+    $(document).ready(function() {
+      function recaptchaCallback() {
       $('#submit').removeAttr('disabled');
-    }
-    function onloadCallback() {
-      grecaptcha.render('recaptcha', {
-        sitekey: '6LduwTQUAAAAAEZCA6QbbpQJmltA77oxElfo2k2R',
-        callback: recaptchaCallback
-      });
-    };
-    // $(document).on('click', function() {
-    //   $('.fade-in').stop(true);
-    //   alert('click working')
-    // });
+      }
+      function onloadCallback() {
+        grecaptcha.render('recaptcha', {
+          sitekey: '6LduwTQUAAAAAEZCA6QbbpQJmltA77oxElfo2k2R',
+          callback: recaptchaCallback
+        });
+      };
+      // $(document).on('click', function() {
+        // $('.fade-in').css('background', 'pink');
+        // $('#profile-pic').finish();
+        // $('.fade-in').finish();
+      // });
+    });
+    
   </script>
 </head>
 

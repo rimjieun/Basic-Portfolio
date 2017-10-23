@@ -42,15 +42,15 @@ body {
 nav.main-nav {
   background: #33cccc;
   height: 70px;
-  animation-name: slide-down;
+/*  animation-name: slide-down;
   animation-duration: 1s;
-  animation-fill-mode: both;
+  animation-fill-mode: both;*/
 }
 
-@keyframes slide-down {
+/*@keyframes slide-down {
   from { transform: translateY(-80px); }
   to { transform: translateY(0); }
-}
+}*/
 
 /*Logo*/
 div.logo {
@@ -102,16 +102,25 @@ img#profile-pic {
   display: block;
   margin: 0 auto;
   border: 3px solid #aeeaea;
-  animation: roll 2s both;
-  left: 50%;
+  /*animation: roll 2s both;
+  left: 50%;*/
 }
 
-@keyframes roll {
+/*@keyframes roll {
   from { transform: translateX(-1000%) rotate(0deg); }
   to { transform: translateX(-50%) rotate(720deg); }
-}
+}*/
 
-div.fade-in {
+/*.skip-animation {
+  animation: instant-in 1ms ease-out;
+  animation-fill-mode: forwards;
+}*/
+
+/*@keyframes roll-stop {
+  
+}*/
+
+/*div.fade-in {
   animation: fadein 1s ease 2s;
   animation-fill-mode: both;
 }
@@ -119,7 +128,7 @@ div.fade-in {
 @keyframes fadein {
   from { opacity: 0; }
   to { opacity: 1; }
-}
+}*/
 
 ul.about-nav {
   padding-bottom: 40px;
