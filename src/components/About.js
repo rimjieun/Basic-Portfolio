@@ -33,18 +33,20 @@ class About extends Component {
         <div className='image-container'>
           <img src='./assets/img/profile-pic.jpg' id='profile-pic' />
         </div>
-        <nav className='about-nav'>
-          <ul className='about-nav flex-row content-center'>
-            <li className={this.state.isIntro ? 'selected about-nav' : 'about-nav'} onClick={this.toggleClass}>I N T R O</li>
-            <li className={this.state.isSkills ? 'selected about-nav' : 'about-nav'} onClick={this.toggleClass}>S K I L L S</li>
-          </ul>
-        </nav>
-        <div className='flex-row content-center'>
-            {this.state.isIntro ? (
-              <Intro />
-            ) : (
-              <Skills />
-            )}
+        <div className='fade-in'>
+          <nav className='about-nav'>
+            <ul className='about-nav flex-row content-center'>
+              <li className={this.state.isIntro ? 'selected about-nav' : 'about-nav'} onClick={this.toggleClass}>I N T R O</li>
+              <li className={this.state.isSkills ? 'selected about-nav' : 'about-nav'} onClick={this.toggleClass}>S K I L L S</li>
+            </ul>
+          </nav>
+          <div className='flex-row content-center'>
+              {this.state.isIntro ? (
+                <Intro />
+              ) : (
+                <Skills />
+              )}
+          </div>
         </div>
       </div>
     );

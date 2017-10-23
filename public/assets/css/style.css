@@ -42,17 +42,21 @@ body {
 nav.main-nav {
   background: #33cccc;
   height: 70px;
-/*  transform: translateY(70px);
-  transition: transform 300ms ease-in-out;*/
+  animation-name: slide-down;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slide-down {
+  from { transform: translateY(-80px); }
+  to { transform: translateY(0); }
 }
 
 /*Logo*/
 div.logo {
   width: 310px;
   text-align: center;
-
   margin-left: 80px;
-
 }
 
 div#title {
@@ -69,9 +73,7 @@ div#subtitle {
 nav.main-nav ul {
   width: 300px;
   height: 70px;
-
   margin-right: 80px;
-
 }
 
 nav.main-nav ul .nav-btn {
@@ -93,12 +95,30 @@ div.image-container {
 }
 
 img#profile-pic {
+  position: relative;
   width: 180px;
   height: auto;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
   border: 3px solid #aeeaea;
+  animation: roll 2s both;
+  left: 50%;
+}
+
+@keyframes roll {
+  from { transform: translateX(-1000%) rotate(0deg); }
+  to { transform: translateX(-50%) rotate(720deg); }
+}
+
+div.fade-in {
+  animation: fadein 1s ease 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 ul.about-nav {
