@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1040px;
   margin: 0 auto;
 }
 
@@ -56,7 +56,7 @@ nav.main-nav {
 div.logo {
   width: 310px;
   text-align: center;
-  margin-left: 80px;
+  /*margin-left: 80px;*/
 }
 
 div#title {
@@ -73,7 +73,7 @@ div#subtitle {
 nav.main-nav ul {
   width: 300px;
   height: 70px;
-  margin-right: 80px;
+  /*margin-right: 80px;*/
 }
 
 nav.main-nav ul .nav-btn {
@@ -263,7 +263,6 @@ i.skills-icon:hover {
 /*Project Containers*/
 div.projects {
   margin-top: 15px;
-  padding: 0 50px;
 }
 
 h1.projects {
@@ -275,7 +274,6 @@ h1.projects {
 
 div.current {
   margin: 10px 0;
-  padding: 0 35px;
 }
 
 div.current-projects {
@@ -286,7 +284,6 @@ div.current-projects {
 div.not-current {
   align-items: flex-start;
   margin: 10px 0;
-  padding: 0 35px;
 }
 
 /*Project Items*/
@@ -473,3 +470,21 @@ p.social-icon {
   font-size: 15px;
   font-weight: 500;
 }
+
+/*@media (max-width: 1060px) {
+  body {
+    background: pink;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background: lightblue;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    background: lightgreen;
+  }
+}*/
