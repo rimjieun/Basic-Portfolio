@@ -477,7 +477,7 @@ p.social-icon {
   font-weight: 500;
 }
 
-@media (max-width: 1060px) {
+/*@media (max-width: 1060px) {
   a.collapse-icon {
     display: block;
     position: absolute;
@@ -489,7 +489,7 @@ p.social-icon {
   nav.main-nav ul {
     display: none;
   }
-}
+}*/
 
 /*@media (max-width: 768px) {
   body {
