@@ -12,7 +12,9 @@ const Navbar = () => (
         <Link to='/' className='nav-btn'>About</Link>
         <Link to='/projects' className='nav-btn'>Projects</Link>
         <Link to='/contact' className='nav-btn'>Contact</Link>
+
       </ul>
+      <a href='#' className='collapse-icon'>&#9776;</a>
     </div>
   </nav>
 );

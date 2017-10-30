@@ -42,6 +42,8 @@ body {
 nav.main-nav {
   background: #33cccc;
   height: 70px;
+  overflow: hidden;
+  position: relative;
 /*  animation-name: slide-down;
   animation-duration: 1s;
   animation-fill-mode: both;*/
@@ -87,6 +89,10 @@ nav.main-nav ul .nav-btn {
 
 nav.main-nav ul .nav-btn:hover {
   background-color: #5dd5d5;
+}
+
+a.collapse-icon {
+  display: none;
 }
 
 /*ABOUT PAGE*/
@@ -471,13 +477,21 @@ p.social-icon {
   font-weight: 500;
 }
 
-/*@media (max-width: 1060px) {
-  body {
-    background: pink;
+@media (max-width: 1060px) {
+  a.collapse-icon {
+    display: block;
+    position: absolute;
+    right: 30px;
+    align-self: center;
+    font-size: 30px;
+    color: white;
+  }
+  nav.main-nav ul {
+    display: none;
   }
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   body {
     background: lightblue;
   }
